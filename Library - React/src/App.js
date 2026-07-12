@@ -1,4 +1,5 @@
 import React from "react";
+import Featured from './components/Featured'
 import Highlights from './components/Highlights';
 import Landing from "./components/Landing";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -12,6 +13,7 @@ function App() {
         <Nav />
         <Landing />
         <Highlights />
+        <Featured/>
       </div>
     </Router>
   );

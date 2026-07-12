@@ -11,6 +11,7 @@ function App() {
       <div className="App">
         <Nav />
         <Landing />
+        <Highlights />
       </div>
     </Router>
   );

@@ -17,10 +17,11 @@ const Featured = () => {
                     Featured<span className="purple"> Books</span>
                 </h2>
                 <div className="books">
-              <Book />
-              <Book />
-              <Book />
-              <Book />
+              <Book book={books[0]}/>
+              <Book book={books[1]}/>
+              <Book book={books[2]}/>
+              <Book book={books[3]}/>
+          
 
                 </div>
             </div>

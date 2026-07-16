@@ -4,7 +4,7 @@ import { books } from '../data'
 
 const Featured = () => {
     console.log(books);
-     console.log(books.filter(book => book.rating ===5).slice(0,4));
+     console.log();
     function getFiveStarBooks() {}
        
         
@@ -17,6 +17,12 @@ const Featured = () => {
                     Featured<span className="purple"> Books</span>
                 </h2>
                 <div className="books">
+                    {books
+                    .filter(book => book.rating ===5)
+                    .slice(0,4)
+                    .map((book => 
+                    <Book/>
+                    ))}
               <Book book={books[0]}/>
               <Book book={books[1]}/>
               <Book book={books[2]}/>

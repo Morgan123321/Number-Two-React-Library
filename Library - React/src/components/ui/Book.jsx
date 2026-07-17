@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 
 const Book = ({ book }) => {
@@ -16,9 +17,10 @@ return (
                                 </a>
                             </div>
                             {
-                                new Array(4).fill(0).map(() => <FontAwesomeIcon icon ="star"/>)
+                                new Array(4).fill(0).map(() => <FontAwesomeIcon icon ="star"/>
+                                )
                             }
-                            </div>
+                            
                             <div className="book__price">
                                {book.salePrice ? (
                                 <>

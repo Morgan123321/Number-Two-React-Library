@@ -1,6 +1,8 @@
 import React from "react";
-import Discounted from './components/Discounted';
-import Featured from './components/Featured'
+import Discounted from './components/ui/Discounted';
+import Explore from './components/Explore';
+import Footer from './components/Footer';
+import Featured from './components/Featured';
 import Highlights from './components/Highlights';
 import Landing from "./components/Landing";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -16,6 +18,8 @@ function App() {
         <Highlights />
         <Featured/>
         <Discounted/>
+        <Explore/>
+        <Footer/>
       </div>
     </Router>
   );

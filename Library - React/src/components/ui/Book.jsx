@@ -17,7 +17,7 @@ return (
                                 </a>
                             </div>
                             {
-                                new Array(4).fill(0).map(() => <FontAwesomeIcon icon ="star"/>
+                                new Array(5).fill(0).map((_, index) => <FontAwesomeIcon icon ="star" key={index}/>
                                 )
                             }
                             

@@ -10,7 +10,7 @@ const Nav = () => {
   }
 
   function closeMenu() {
-   document.body.classList.remove("menu--close");
+   document.body.classList.remove(" menu--open");
   }
   return (
     <nav>
@@ -46,7 +46,7 @@ const Nav = () => {
           </li>
         </ul>
         <div className="menu__backdrop">
-          <button className="btn__menu btn__menu--close">
+          <button className="btn__menu btn__menu--close" onClick {()=> closeMenu(props)}>
             <FontAwesomeIcon icon="times"/>
           </button>
           <ul className="menu__links">

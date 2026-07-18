@@ -5,6 +5,13 @@ import { faBars, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import LibraryLogo from "../assets/Library.svg";
 
 const Nav = () => {
+  function openMenu() {
+    document.body.classList += " menu--open";
+  }
+
+  function closeMenu() {
+   document.body.classList.remove("menu--close");
+  }
   return (
     <nav>
       <div className="nav__container">
@@ -26,7 +33,7 @@ const Nav = () => {
           </li>
 
           <li>
-            <button className="btn__menu" type="button">
+            <button className="btn__menu" onClick={openMenu}>
               <FontAwesomeIcon icon={faBars} />
             </button>
           </li>

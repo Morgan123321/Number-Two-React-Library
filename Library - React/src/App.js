@@ -8,17 +8,16 @@ import Landing from "./components/Landing";
 import { BrowserRouter as Router } from "react-router-dom";
 import Nav from "./components/Nav";
 import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Route/>
         <Nav />
-        <Landing />
-        <Highlights />
-        <Featured/>
-        <Discounted/>
-        <Explore/>
+      <Home/>
         <Footer/>
       </div>
     </Router>

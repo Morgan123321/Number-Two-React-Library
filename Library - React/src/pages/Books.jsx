@@ -1,7 +1,8 @@
 import React from 'react';
 import {books} from "../data";
+import Book from "../components/ui/Book";
 
-const books = () => {
+const Books = () => {
 return (
     <div id="books__body">
         <main id="books__main">

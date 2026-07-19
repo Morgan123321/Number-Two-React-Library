@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Nav />
         <Route path="/" exact component={Home}/>
-        <Route path="/books" render={() => <Books books={books}/>}
+       <Route path="/books" component={Books} />
       
         <Footer/>
       </div>

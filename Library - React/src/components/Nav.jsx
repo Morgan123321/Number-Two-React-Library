@@ -7,6 +7,7 @@ import {
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import LibraryLogo from "../assets/Library.svg";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   function openMenu() {
@@ -60,22 +61,22 @@ const Nav = () => {
           </button>
 
           <ul className="menu__links">
-            <li className="menu__list">
-              <a href="/" className="menu__link">
+            <div className="menu__list">
+              <Link to="/" className="menu__link">
                 Home
-              </a>
+              </Link>
             </li>
 
             <li className="menu__list">
-              <a href="/" className="menu__link">
+              <Link to="/" className="menu__link">
                 Books
-              </a>
+              </Link>
             </li>
 
             <li className="menu__list">
-              <a href="/" className="menu__link">
+              <Link to="/" className="menu__link">
                 Cart
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

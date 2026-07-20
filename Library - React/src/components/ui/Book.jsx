@@ -6,15 +6,15 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 const Book = ({ book }) => {
 return (
 <div className="book">
-                            <a href="/">
+                            <link to="/">
                                 <figure className="book__img--wrapper">
                                     <img src={book.url}/>
                                 </figure>
-                            </a>
+                            </link>
                             <div className="book__title">
-                                <a href="/" className="book__title--link">
+                                <link to="/" className="book__title--link">
                                 {book.title}
-                                </a>
+                                </link>
                             </div>
                             {
                                 new Array(Math.floor(book.rating)).fill(0).map((_, index) => <FontAwesomeIcon icon ="star" key={index}/>

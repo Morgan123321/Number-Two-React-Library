@@ -17,14 +17,7 @@ return (
                                 {book.title}
                                 </Link>
                             </div>
-                            {
-                                new Array(Math.floor(book.rating)).fill(0).map((_, index) => <FontAwesomeIcon icon ="star" key={index}/>
-                                )
-                            }
-                            {
-                                !Number.isInteger(book.rating) && <FontAwesomeIcon icon="star-half-alt"/>
-                            }
-                            
+                            <Rating rating={book.rating}/>
                             <div className="book__price">
                                {book.salePrice ? (
                                 <>

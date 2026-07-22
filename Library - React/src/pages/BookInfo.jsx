@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from "react-router-dom";
+import Rating from "../components/ui/Rating";
 
 const BookInfo = ({books}) => {
     return (
@@ -22,7 +23,7 @@ const BookInfo = ({books}) => {
                             </figure>
                            <div className="book__selected--description">
                             <h2 className="book__selected--title">Crack the Code Interview</h2>
-                            <FontAwesomeIcon icon="star"/>
+                           <Rating rating="4.5"/>
                            </div>
                         </div>
                     </div>

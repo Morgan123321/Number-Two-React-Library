@@ -24,6 +24,9 @@ const BookInfo = ({books}) => {
                            <div className="book__selected--description">
                             <h2 className="book__selected--title">Crack the Code Interview</h2>
                            <Rating rating="4.5"/>
+                           <div className="book__selected--price">
+                            
+                           </div>
                            </div>
                         </div>
                     </div>

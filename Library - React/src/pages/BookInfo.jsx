@@ -25,7 +25,25 @@ const BookInfo = ({books}) => {
                             <h2 className="book__selected--title">Crack the Code Interview</h2>
                            <Rating rating="4.5"/>
                            <div className="book__selected--price">
-                            
+                            <Price originalPrice="50" salePrice={20}/>
+                            <div className="book__summary">
+                                <div className="book__summary--title">
+                                    Summary
+                                </div>
+                                <p className="book__summary__para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum error reprehenderit pariatur unde ipsam, minus doloribus! Reiciendis, non enim? Placeat impedit debitis rerum atque veritatis sit ex quam ad!
+                                </p>
+                                <p className="book__summary__para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum error reprehenderit pariatur unde ipsam, minus doloribus! Reiciendis, non enim? Placeat impedit debitis rerum atque veritatis sit ex quam ad!
+                                </p>
+                                <p className="book__summary__para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum error reprehenderit pariatur unde ipsam, minus doloribus! Reiciendis, non enim? Placeat impedit debitis rerum atque veritatis sit ex quam ad!
+                                </p>
+                                
+                            </div>
+                            <button className="btn">
+                                Add to cart
+                            </button>
                            </div>
                            </div>
                         </div>

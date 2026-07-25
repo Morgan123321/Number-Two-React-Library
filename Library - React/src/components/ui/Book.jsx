@@ -15,7 +15,7 @@ return (
                                 </figure>
                             </Link>
                             <div className="book__title">
-                                <Link to="/" className="book__title--link">
+                                <Link to={`/books/${book.id}`} className="book__title--link">
                                 {book.title}
                                 </Link>
                             </div>

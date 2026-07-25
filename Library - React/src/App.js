@@ -9,20 +9,26 @@ import Books from "./pages/Books";
 import BookInfo from "./pages/BookInfo";
 import { books } from "./data";
 
-
 function App() {
   return (
-  <Route
-  path="/books"
-  exact
-  render={() => <Books books={books} />}
-/>
+    <Router>
+      <div className="App">
+        <Nav />
 
-<Route
-  path="/books/:id"
-  render={() => <BookInfo books={books} />}
-/>
-        <Footer/>
+        <Route path="/" exact component={Home} />
+
+        <Route
+          path="/books"
+          exact
+          render={() => <Books books={books} />}
+        />
+
+        <Route
+          path="/books/:id"
+          render={() => <BookInfo books={books} />}
+        />
+
+        <Footer />
       </div>
     </Router>
   );

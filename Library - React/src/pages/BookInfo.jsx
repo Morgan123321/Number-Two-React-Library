@@ -4,10 +4,13 @@ import { Link, useParams } from "react-router-dom";
 import Rating from "../components/ui/Rating";
 import Price from "../components/ui/Price";
 
-const BookInfo = ({books}) => {
-    const { id } = useParams();
-    const book = books.find(book=>+book.id=== +id);
-    console.log(book)
+const BookInfo = ({ books }) => {
+  const { id } = useParams();
+  const book = books.find((book) => +book.id === +id);
+
+  if (!book) {
+    return <div>Book not found</div>;
+  }
     return (
         <div id="books__body">
             <main id="books__main">
@@ -36,13 +39,13 @@ const BookInfo = ({books}) => {
                                 <h3 className="book__summary--title">
                                     Summary
                                 </h3>
-                                <p className="book__summary__para">
+                                <p className="book__summary--para">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum error reprehenderit pariatur unde ipsam, minus doloribus! Reiciendis, non enim? Placeat impedit debitis rerum atque veritatis sit ex quam ad!
                                 </p>
-                                <p className="book__summary__para">
+                                <p className="book__summary--para">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum error reprehenderit pariatur unde ipsam, minus doloribus! Reiciendis, non enim? Placeat impedit debitis rerum atque veritatis sit ex quam ad!
                                 </p>
-                                <p className="book__summary__para">
+                                <p className="book__summary--para">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum error reprehenderit pariatur unde ipsam, minus doloribus! Reiciendis, non enim? Placeat impedit debitis rerum atque veritatis sit ex quam ad!
                                 </p>
                                 
@@ -61,6 +64,10 @@ const BookInfo = ({books}) => {
                                     Recommended Books
                                 </h2>
                             </div>
+                            {
+                            books.filter(book=>book.rating === 5 && book.id !==id)
+                            .map(book=> <Book book={book} key={book.id}/>)
+                            }
                         </div>
                     </div>
                 </div>

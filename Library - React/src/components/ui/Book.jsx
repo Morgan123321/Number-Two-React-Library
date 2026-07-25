@@ -15,9 +15,7 @@ return (
                                 </figure>
                             </Link>
                             <div className="book__title">
-                                <Link to={`/books/${book.id}`} className="book__title--link">
-                                {book.title}
-                                </Link>
+                                <Link to={`/books/${book.id}`}></Link>
                             </div>
                             <Rating rating={book.rating}/>
                            <Price salePrice={book.salePrice} originalPrice={book.originalPrice}/>

@@ -32,7 +32,7 @@ const BookInfo = ({ books }) => {
                                 className="book__selected--img"></img>
                             </figure>
                            <div className="book__selected--description">
-                            <h2 className="book__selected--title">Crack the Code Interview</h2>
+                           <h2 className="book__selected--title">{book.title}</h2>
                            <Rating rating={book.rating}/>
                            <div className="book__selected--price">
                             <Price originalPrice={book.originalPrice} salePrice={book.salePrice} />
@@ -71,7 +71,7 @@ const BookInfo = ({ books }) => {
                             .slice(0,4)
                             .map(book=> <Book book={book} key={book.id}/>
 
-                            )}                            }
+                            )}                            
                         </div>
                     </div>
                     </div>

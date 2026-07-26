@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Books from "./pages/Books";
 import BookInfo from "./pages/BookInfo";
 import { books } from "./data";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
           path="/books/:id"
           render={() => <BookInfo books={books} />}
         />
+
+        <Route path="/cart" render={()=><Books books={books}/>} />
 
         <Footer />
       </div>
